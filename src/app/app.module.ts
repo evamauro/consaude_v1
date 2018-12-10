@@ -10,6 +10,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { IntoPage } from '../pages/into/into';
+import { IntoPageModule } from '../pages/into/into.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IntoPageModule
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
